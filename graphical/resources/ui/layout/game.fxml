@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox id="root" fx:id="root" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1666.0" stylesheets="@../styles/game.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="graphical.GameViewController">
+   <children>
+      <VBox id="controlPane" alignment="TOP_CENTER" maxWidth="300.0" minWidth="300.0" prefHeight="200.0" prefWidth="300.0">
+         <children>
+            <VBox id="playerStats" prefHeight="200.0" prefWidth="100.0">
+               <VBox.margin>
+                  <Insets left="25.0" right="25.0" top="25.0" />
+               </VBox.margin>
+               <children>
+                  <AnchorPane id="titleBar" maxHeight="30.0" prefHeight="30.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label text="    Player Stats" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Label fx:id="nameLabel" text="Name: Jono" textFill="#c3302e">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="8.0" top="8.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="moneyLabel" text="Money: 0" textFill="#c3302e">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="8.0" top="8.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="creditLabel" text="Credit: 0" textFill="#c3302e">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="8.0" top="8.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="practiceLabel" text="Practice Chips: 0" textFill="#c3302e">
+                     <VBox.margin>
+                        <Insets left="8.0" top="8.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="rankLabel" text="Rank: 0" textFill="#c3302e">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="8.0" top="8.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="locationLabel" text="Location: AAA" textFill="#c3302e">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="8.0" top="8.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox id="actionPane" fx:id="movePane" alignment="TOP_CENTER" maxHeight="100.0" prefHeight="100.0" prefWidth="100.0">
+               <children>
+                  <AnchorPane id="titleBar" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Label text="    Move" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <VBox fx:id="moveActionsContainer" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="18.0" top="18.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="25.0" right="25.0" top="25.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox id="actionPane" fx:id="workPane" alignment="TOP_CENTER" maxHeight="100.0" prefHeight="100.0" prefWidth="100.0">
+               <children>
+                  <AnchorPane id="titleBar" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Label text="    Work" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <VBox fx:id="workActionsContainer" alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <VBox.margin>
+                        <Insets bottom="18.0" top="18.0" />
+                     </VBox.margin></VBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="25.0" right="25.0" top="25.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox id="actionPane" fx:id="rankUpPane" alignment="TOP_CENTER" maxHeight="150.0" prefHeight="125.0" prefWidth="100.0">
+               <children>
+                  <AnchorPane id="titleBar" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Label text="    Rank Up" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0">
+                     <children>
+                        <Button id="button" mnemonicParsing="false" onAction="#rankChangeMoney" text="Money" />
+                        <Button id="button" mnemonicParsing="false" onAction="#rankChangeCredit" text="Credit">
+                           <HBox.margin>
+                              <Insets left="8.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Desired Rank:" textFill="#c3302e" />
+                        <TextField fx:id="rankInput" maxWidth="50.0">
+                           <HBox.margin>
+                              <Insets left="8.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="25.0" right="25.0" top="25.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox id="actionPane" alignment="TOP_CENTER" layoutX="35.0" layoutY="510.0" maxHeight="150.0" prefHeight="75.0" prefWidth="100.0">
+               <children>
+                  <AnchorPane id="titleBar" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Label text="    Turn" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0">
+                     <children>
+                        <Button id="button" mnemonicParsing="false" onAction="#end" prefHeight="26.0" prefWidth="64.0" text="End Turn" />
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="25.0" right="25.0" top="25.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </VBox>
+      <VBox id="gamePane" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+         <children>
+            <AnchorPane id="imageDisplay" fx:id="boardView" maxHeight="800.0" maxWidth="1066.0" minHeight="800.0" minWidth="1066.0" prefHeight="800.0" prefWidth="1066.0" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+      <VBox id="leaderboardPane" alignment="TOP_CENTER" maxWidth="300.0" minWidth="300.0" prefHeight="300.0" prefWidth="300.0">
+         <children>
+            <VBox id="actionPane" alignment="TOP_CENTER" maxHeight="500.0" prefHeight="500.0" prefWidth="100.0">
+               <children>
+                  <AnchorPane id="titleBar" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Label text="    Leaderboard" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <TableView fx:id="leaderboard" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </VBox.margin></TableView>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

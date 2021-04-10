@@ -1,0 +1,114 @@
+#root {
+    -fx-background-color: rgba(174, 110, 65, 1.0);
+}
+
+#gamePane {
+    -fx-background-color: rgba(174, 110, 65, 1.0);
+}
+
+#playerStats {
+    -fx-background-color: rgba(255, 255, 255, 0.85);
+    -fx-effect: dropshadow( gaussian , rgba(34,22,14,0.4) , 10,0,0,4);
+    -fx-background-radius: 10 10 10 10;
+}
+
+#button {
+    -fx-border-width: 0;
+    -fx-background-color:rgba(160, 65, 65, 0.9);
+    -fx-font-size: 12;
+    -fx-text-fill: rgba(255, 255, 255, 1.0);
+}
+
+#button:hover {
+    -fx-effect: dropshadow( gaussian , rgba(34,22,14,0.4) , 10,0,0,4);
+}
+
+#actionPane {
+    -fx-background-color: rgba(255, 255, 255, 0.85);
+    -fx-effect: dropshadow( gaussian , rgba(34,22,14,0.4) , 10,0,0,4);
+    -fx-background-radius: 10 10 10 10;
+}
+
+#titleBar {
+    -fx-background-color: rgba(160, 65, 65, 0.9);
+    -fx-background-radius: 9 9 0 0;
+}
+
+#controlPane {
+    -fx-background-color: rgba(174, 110, 65, 1.0);
+}
+
+#leaderboardPane {
+    -fx-background-color: rgba(174, 110, 65, 1.0);
+}
+
+.table-view{
+   -fx-background-color: transparent;
+}
+
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background{
+    -fx-background-color:transparent;
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: rgba(160, 65, 65, 0.9);
+    -fx-background-radius: 10 10 10 10;
+    -fx-effect: dropshadow( gaussian , rgba(14,2,0,0.2) , 10,0,0,3);
+    -fx-background-insets: 10 0 10 0, 0 0 0 0;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-padding: 10;
+    -fx-size: 45;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: rgba(160, 65, 65, 0.9);
+    -fx-alignment: CENTER;
+}
+
+.table-row-cell{
+    -fx-background-color: transparent;
+    -fx-table-cell-border-color: transparent;
+}
+
+
+.table-row-cell:selected {
+    -fx-background-color:transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+#title-banner {
+    -fx-effect: dropshadow( gaussian , rgba(14,2,0,0.3) , 10,0,0,4);
+    -fx-background-radius: 10 10 10 10;
+}
+
+#menuButton {
+    -fx-border-width: 0;
+    -fx-background-color:rgba(160, 65, 65, 0.9);
+    -fx-font-size: 12;
+    -fx-text-fill: rgba(255, 255, 255, 1.0);
+    -fx-effect: dropshadow( gaussian , rgba(14,2,0,0.3) , 10,0,0,4);
+}
+
+#menuLabel {
+    -fx-text-fill: #c3302e;
+}
+
+#imageDisplay {
+    -fx-background-image: url("../../board.jpg");
+    -fx-background-size:cover;
+}
+
+#diceTest {
+    -fx-border-width: 0;
+    -fx-effect: dropshadow( gaussian , rgba(14,2,0,0.3) , 10,0,0,4);
+    -fx-background-radius: 23 23 23 23;
+}

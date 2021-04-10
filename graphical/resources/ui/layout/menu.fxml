@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<HBox fx:controller="graphical.MainMenuController" id="root" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1400.0" stylesheets="@../styles/game.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+         <children>
+            <ImageView id="title-banner" fitHeight="300.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../deadwood-title.jpg" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label text="Player Amount" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="50.0">
+               <children>
+                  <Button onAction="#clickLeft" id="menuButton" mnemonicParsing="false" text="&lt;">
+                     <HBox.margin>
+                        <Insets right="8.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Label fx:id="numLabel" text="2" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button onAction="#clickRight" id="menuButton" mnemonicParsing="false" text="&gt;">
+                     <HBox.margin>
+                        <Insets left="8.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="8.0" />
+               </VBox.margin>
+            </HBox>
+            <Button onAction="#play" id="menuButton" mnemonicParsing="false" text="Play" />
+         </children>
+      </VBox>
+   </children>
+</HBox>
